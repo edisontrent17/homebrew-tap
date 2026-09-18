@@ -8,7 +8,7 @@ cask "relay-ssh" do
   homepage "https://github.com/edisontrent17/ssh-client"
 
   depends_on arch: :arm64
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   app "Relay.app"
   binary "#{appdir}/Relay.app/Contents/MacOS/relay", target: "relay-ssh"
